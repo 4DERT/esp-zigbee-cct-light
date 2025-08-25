@@ -1,0 +1,38 @@
+{
+    "configurations": [
+        {
+            "name": "ESP-IDF",
+            "compilerPath": "/home/vscode/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc",
+            "compileCommands": [
+                "${workspaceFolder}/build/compile_commands.json"
+            ],
+            "includePath": [
+                "/opt/esp-idf/components/**",
+                "/opt/esp-idf/components/freertos/include/**",
+                "/opt/esp-idf/**",
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/main/**",
+                "${workspaceFolder}/components/**",
+                "${workspaceFolder}/managed_components/**",
+                "/opt/esp-idf/components/freertos/port/riscv/include",
+                "/opt/esp-idf/components/esp_hw_support/include",
+                "/opt/esp-idf/components/esp_hw_support/include/soc",
+                "/opt/esp-idf/components/esp_system/include",
+                "/opt/esp-idf/components/hal/include",
+                "/opt/esp-idf/components/hal/esp32/include",
+                "/opt/esp-idf/components/esp_rom/include",
+                "/opt/esp-idf/components/esp_common/include"
+            ],
+            "browse": {
+                "path": [
+                    "/opt/esp-idf/components",
+                    "${workspaceFolder}"
+                ],
+                "limitSymbolsToIncludedHeaders": false
+            },
+            "configurationProvider": "ms-vscode.cmake-tools",
+            "cStandard": "c23"
+        }
+    ],
+    "version": 4
+}
