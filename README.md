@@ -29,10 +29,16 @@ This device implements the following Zigbee Home Automation clusters (server rol
 | **Color Control** | Color temperature control (mireds only); physical min/max limits            |
 
 ## Hardware
-- **ESP32-C6** / **ESP32-H2** (Zigbee capable).  
-- Dual MOSFET LED driver (warm + cool white LED strips).  
-- Step-down power supply for ESP32.  
-- Optional push-button for local control and reset.
+- **ESP32-C6** / **ESP32-H2** devkit or module (with Zigbee support).
+- Two logic-level N-MOSFETs (e.g. IRLZ44N) controlling warm-white and cool-white LED channels.  
+- Step-down regulator (VIN → 5V) to power the ESP32.  
+- Optional push-button connected to a GPIO (for local control and factory reset) – you can also use the built-in BOOT button on the devkit.  
+- Optional status LED with resistor connected to a GPIO – or use the built-in LED available on most devkits.  
+- LED strips powered directly from VIN (e.g. 12V or 24V).  
+
+Circuit diagram:
+
+<img src="images/schematic.png" alt="KiCad schematic" width="600"/>
 
 ## Integration
 - Tested with **Home Assistant (ZHA)**.
