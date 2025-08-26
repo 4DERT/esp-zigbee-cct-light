@@ -31,11 +31,11 @@ This device implements the following Zigbee Home Automation clusters (server rol
 ## Hardware
 - **ESP32-C6** / **ESP32-H2** (Zigbee capable).  
 - Dual MOSFET LED driver (warm + cool white LED strips).  
-- Step-down power supply for ESP32 + LEDs.  
+- Step-down power supply for ESP32.  
 - Optional push-button for local control and reset.
 
 ## Integration
-- Tested with **Home Assistant (ZHA)** – detected as a **Zigbee Color Temperature Light**.  
+- Tested with **Home Assistant (ZHA)**.
 - Should also work with **Zigbee2MQTT** and other HA-profile compatible coordinators.
 
 Screenshots from Home Assistant:
